@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+        android:title="Wallpaper Scrolling"
+        android:key="aryamod_scroll"
+        android:defaultValue="false"
+        android:summaryOn="Enabled"
+        android:summaryOff="Disabled"
+        app:packageNameToKill="com.sec.android.app.launcher"/>
+    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference
+        android:title="Dark Font"
+        android:key="need_dark_font"
+        android:defaultValue="false"
+        android:summaryOn="Enabled"
+        android:summaryOff="Disabled"
+        app:packageNameToKill="com.sec.android.app.launcher"/>
+
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:entries="@array/tw_effect_entries"
+        android:title="Touchwiz Page Effect"
+        android:key="tw_page_effect"
+        android:defaultValue="1"
+        android:entryValues="@array/tw_effect_values"
+        app:packageNameToKill="com.sec.android.app.launcher"/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Swipe Rest"
+        app:componentName="com.wubydax.geartwswipe/com.wubydax.geartwswipe.ResetDialogActivity"
+        android:summary="Choose what app or shortcut to open when TW launcher is being swiped to the magazine page" />
+
+    <PreferenceCategory android:title="Gestures anywhere on Homescreen ">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:entries="@array/launcher_gesture_doubletap_entries"
+            android:title="Double tap" android:key="am_doubletap"
+            android:defaultValue="0"
+            android:entryValues="@array/launcher_gesture_doubletap_values"
+            app:packageNameToKill="com.sec.android.app.launcher"/>
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:entries="@array/launcher_gesture_swipeup_entries"
+            android:title="Swipe up"
+            android:key="am_swipe_up"
+            android:defaultValue="4"
+            android:entryValues="@array/launcher_gesture_swipeup_values"
+            app:packageNameToKill="com.sec.android.app.launcher"/>
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:entries="@array/launcher_gesture_swipedown_entries"
+            android:title="Swipe down"
+            android:key="am_swipe_down"
+            android:defaultValue="14"
+            android:entryValues="@array/launcher_gesture_swipedown_values"
+            app:packageNameToKill="com.sec.android.app.launcher"/>
+    </PreferenceCategory>
+</PreferenceScreen>

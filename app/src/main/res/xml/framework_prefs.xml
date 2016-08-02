@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceScreen
+        android:title="Power Extended Menu"
+        android:summary="other options in power extended menu">
+        <PreferenceCategory
+            android:title="Power Extended Menu">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="PM_power"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Power Off" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="PM_data"
+                android:summaryOn="enabled"
+                android:summaryOff="disabled"
+                android:title="Data Mode" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="PM_airplane"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Airplane Mode" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="PM_restart"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Restart" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="PM_recovery"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Recovery" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:key="PM_download"
+                android:defaultValue="false"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Download Mode" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="true"
+                android:key="PM_torch"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Flashlight" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="PM_record"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Screen Record" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="PM_screenshot"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Screenshot" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+                android:defaultValue="false"
+                android:key="PM_emergency"
+                android:summaryOff="disabled"
+                android:summaryOn="enabled"
+                android:title="Emergency Mode" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+
+    <PreferenceScreen
+        android:title="Customize Buttons"
+        android:summary="Choose button behaviors">
+        <PreferenceCategory
+            android:title="Home Button"
+            android:summary="Choose button behaviors">
+            <SwitchPreference
+                android:title="Enable Home Wake"
+                android:key="homewake_toggle"
+                android:defaultValue="true"
+                android:summaryOn="Home button will wake phone"
+                android:summaryOff="Home button now disabled" />
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:entries="@array/double_home_entries"
+                android:title="DoubleTap Assignments"
+                android:key="home_doubletap_button"
+                android:defaultValue="104"
+                android:summary="%s"
+                android:entryValues="@array/double_home_values" />
+            <com.wubydax.romcontrol.v2.prefs.IntentDialogPreference
+                android:title="DoubleTap Application"
+                android:key="aryamod_doubletap_home_app"
+                android:summary="None"
+                app:showSearch="false" />
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:entries="@array/long_home_entries"
+                android:title="LongPress Assignment"
+                android:key="home_longpress_button"
+                android:defaultValue="0"
+                android:summary="%s"
+                android:entryValues="@array/long_home_values" />
+            <com.wubydax.romcontrol.v2.prefs.IntentDialogPreference
+                android:title="LongPress Application"
+                android:key="aryamod_longpress_home_app"
+                android:summary="None"
+                app:showSearch="false" />
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="Left Capacitive Key" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:entries="@array/click_menu_entries"
+            android:title="ShortPress Assignment"
+            android:key="left_shortpress_button"
+            android:summary="%s"
+            android:dependency="left_shortpress_button"
+            android:defaultValue="4"
+            android:entryValues="@array/click_menu_values" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:entries="@array/long_menu_entries"
+            android:title="LongPress Assignment"
+            android:key="menu_longpress_button"
+            android:summary="%s"
+            android:defaultValue="102"
+            android:entryValues="@array/long_menu_values" />
+        <com.wubydax.romcontrol.v2.prefs.IntentDialogPreference
+            android:title="LongPress Application"
+            android:key="aryamod_longpress_menu_app"
+            android:summary="None"
+            app:showSearch="false" />
+
+        <PreferenceCategory
+            android:title="Right Capacitive Key" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:entries="@array/long_back_entries"
+            android:title="Longpress Assignment"
+            android:key="right_longpress_button"
+            android:summary="%s"
+            android:dependency="right_longpress_button"
+            android:defaultValue="11"
+            android:entryValues="@array/long_back_values" />
+        <com.wubydax.romcontrol.v2.prefs.IntentDialogPreference
+            android:title="Longpress Application"
+            android:key="aryamod_longpress_back_app"
+            app:showSearch="false" />
+    </PreferenceScreen>
+
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Torchlight"
+        android:key="torchlight_enable"
+        android:defaultValue="0"
+        android:summary="Turn on the torch light by pressing and holding the volume up key while the screen is off" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:entries="@array/torchlight_timeout_entries"
+        android:title="@string/torchlight_timeout_title"
+        android:dependency="torchlight_enable"
+        android:key="torchlight_timeout"
+        android:entryValues="@array/torchlight_timeout_values"/>
+
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:entries="@array/pref_volume_cursor_titles"
+        android:title="Volume Key Cursor Control"
+        android:key="aryamod_keyboard_volume_control"
+        android:defaultValue="0"
+        android:entryValues="@array/pref_volume_cursor_values" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="USB Plug/Unplug Wake Screen"
+        android:key="usb_plugged"
+        android:defaultValue="true"
+        android:summaryOn="On"
+        android:summaryOff="Off" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Ambient Display"
+        android:key="doze_toggle"
+        android:defaultValue="false"
+        android:summaryOn="Option enabled"
+        android:summaryOff="Option disabled"
+        app:isSilent="false"
+        app:packageNameToKill="com.android.systemui"/>
+</PreferenceScreen>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen
+        android:title="Lockscreen Carrier"
+        android:summary="custom text and colors">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:title="Custom Carrier Text in Lockscreen"
+            android:key="custom_lock_carrier"
+            android:defaultValue="false"
+            android:summaryOn="Enabled"
+            android:summaryOff="Disabled"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui" />
+        <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference
+            android:title="Custom Carrier Text"
+            android:defaultValue="AryaMod"
+            android:key="custom_lock_carrier_text"
+            android:summary="Edit carrier label"
+            android:dependency="custom_lock_carrier"
+            android:dialogTitle="Set Custom Text" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:title="Carrier Text Color"
+            android:defaultValue="#ffffff"
+            android:key="carrier_color"
+            android:summary="Choose color"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui"/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:title="Lockscreen Colors"
+        android:summary="set colors">
+        <PreferenceCategory
+            android:title="Clock Coloring Master Switches" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:title="Clock Theme Colors"
+            android:key="theme_override"
+            android:defaultValue="true"
+            android:summaryOn="Custom colors Enabled
+            \n> Turn Theme Colors off to use theme colors"
+            android:summaryOff="Custom colors Disabled, use theme colors"
+            app:isSilent="false"
+            app:packageNameToKill="com.android.systemui"/>
+        <SwitchPreference android:title="Clock Global Color"
+            android:key="kg_clock_global_toggle"
+            android:dependency="theme_override"
+            android:defaultValue="false"
+            android:summaryOn="Enabled"
+            android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:title="Lockscreen Clock Global Color"
+            android:key="kg_clock_global_color"
+            android:summary="Set single color"
+            android:dependency="kg_clock_global_toggle"
+            android:defaultValue="#ffffff" />
+        <PreferenceCategory
+            android:title="Individual Clock Colors" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:title="Lockscreen Clock Hours"
+            android:key="kg_clock_hours_color"
+            android:summary="Choose your color"
+            android:dependency="theme_override"
+            android:defaultValue="#ffffff" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:title="Lockscreen Clock Minutes"
+            android:key="kg_clock_minutes_color"
+            android:summary="Choose your color"
+            android:dependency="theme_override"
+            android:defaultValue="#ffffff" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:title="Lockscreen Clock Seconds"
+            android:key="kg_clock_seconds_color"
+            android:summary="Choose your color"
+            android:dependency="theme_override"
+            android:defaultValue="#ffffff" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            android:title="Lockscreen Date"
+            android:key="kg_date_color"
+            android:summary="Choose date color"
+            android:dependency="theme_override"
+            android:defaultValue="#ffffff" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:title="Lockscreen Clock and Date Options"
+        android:summary="Set features, sizes and more">
+        <PreferenceCategory
+            android:title="Lockscreen Clock" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:title="Custom Font Style"
+            android:key="use_lockscreen_clock_font_style"
+            android:defaultValue="false"
+            android:summaryOn="Custom font enabled"
+            android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:entries="@array/lockscreen_font_style_entries"
+            android:title="Font Style"
+            android:key="lockscreen_clock_font_style"
+            android:summary="%s"
+            android:dependency="use_lockscreen_clock_font_style"
+            android:defaultValue="1"
+            android:entryValues="@array/lockscreen_font_style_values" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:title="Add Seconds to Clock"
+            android:key="lock_seconds"
+            android:defaultValue="true"
+            android:summaryOn="On"
+            android:summaryOff="Off" />
+        <PreferenceCategory
+            android:title="Scaled Resizing" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:title="Clock Scaling On/Off Toggle"
+            android:key="scaling_toggle"
+            android:defaultValue="false"
+            android:summaryOn="On"
+            android:summaryOff="Off" />
+        <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference
+            app:maxValue="400"
+            app:minValue="150"
+            app:unitsValue="dp"
+            android:title="Clock Scaling"
+            android:key="lockscreen_clock_scale"
+            android:summary="Adjust clock size"
+            android:dependency="scaling_toggle"
+            android:defaultValue="300" />
+        <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference
+            app:maxValue="325"
+            app:minValue="100"
+            app:unitsValue="dp"
+            android:title="Clock Scaling Seconds"
+            android:key="seconds_clock_scale"
+            android:summary="Adjust Seconds size"
+            android:dependency="scaling_toggle"
+            android:defaultValue="170" />
+        <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference
+            app:maxValue="150"
+            app:minValue="50"
+            app:unitsValue="dp"
+            android:title="Clock Scaling Date"
+            android:key="date_clock_scale"
+            android:summary="Adjust Date size"
+            android:dependency="scaling_toggle"
+            android:defaultValue="70" />
+    </PreferenceScreen>
+</PreferenceScreen>

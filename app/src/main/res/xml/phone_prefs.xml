@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wubydax="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="General phone mods" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:entries="@array/call_delay_entries"
+        android:title="End Call Delay"
+        android:key="db_call_delay"
+        android:summary="%s"
+        android:defaultValue="5000"
+        android:entryValues="@array/call_delay_values"
+        app:packageNameToKill="com.android.incallui"/>
+
+    <com.wubydax.romcontrol.v2.prefs.FilePreference
+        android:title="Add Call/Record Button"
+        android:key="modcfg_avcr_button"
+        android:defaultValue="false"
+        android:summaryOn="Record button shown"
+        android:summaryOff="Add call button shown"
+        app:packageNameToKill="com.android.incallui"/>
+
+    <PreferenceCategory android:title="AutoCallRecord">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:title="Incoming auto call record"
+            android:key="auto_call_record_in"
+            android:defaultValue="false"
+            android:summaryOn="Enabled"
+            android:summaryOff="Disabled"
+            app:packageNameToKill="com.android.incallui"/>
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:title="Outgoing auto call record"
+            android:key="auto_call_record_out"
+            android:defaultValue="false"
+            android:summaryOn="Enabled"
+            android:summaryOff="Disabled"
+            app:packageNameToKill="com.android.incallui"/>
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        android:title="Custom bg for IncallUI">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:defaultValue="false"
+            android:key="enable_gear_custom_bg"
+            android:summaryOff="Disabled"
+            android:summaryOn="Enabled"
+            android:title="Enable custom background"/>
+
+        <PreferenceCategory
+            android:dependency="enable_gear_custom_bg"
+            android:title="General bg preferences">
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="0"
+                android:entries="@array/custom_bg_type_entries"
+                android:entryValues="@array/custom_bg_type_values"
+                android:key="gear_custom_bg_type"
+                android:title="Background type"
+                app:dependentValue="0"/>
+            <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference
+                android:defaultValue="255"
+                android:key="gear_bg_opacity"
+                android:title="Background opacity"
+                app:maxValue="255"
+                app:minValue="0"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:dependency="enable_gear_custom_bg"
+            android:title="Custom image preferences">
+            <com.wubydax.romcontrol.v2.prefs.UriSelectionPreference
+                android:key="gear_bg_image_uri"
+                android:title="Select Bg image"/>
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="0"
+                android:entries="@array/crop_entries"
+                android:entryValues="@array/crop_values"
+                android:key="gear_bg_crop_type"
+                android:title="Set Image Scaling Type"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:dependency="enable_gear_custom_bg"
+            android:title="Color and gradient preferences">
+
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#00000000"
+                android:dependency="gear_custom_bg_type"
+                android:key="gear_bg_primary_color"
+                android:title="Select primary color"/>
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+                android:defaultValue="#00000000"
+                android:dependency="gear_custom_bg_type"
+                android:key="gear_second_gradient_color"
+                android:title="Secondary Color (for gradient)"/>
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference
+                android:defaultValue="0"
+                android:dependency="gear_custom_bg_type"
+                android:entries="@array/gradient_entries"
+                android:entryValues="@array/gradient_values"
+                android:key="gear_bg_gradient_orientation"
+                android:title="Gradient orientation"/>
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+    <PreferenceCategory
+        android:title="Other Settings" />
+    <PreferenceScreen
+        android:title="Advanced Function Menu"
+        android:summary="Usb Setup. Hardware Test, IMEI" >
+        <PreferenceCategory
+            android:title="Advanced Function Menu" />
+        <PreferenceScreen
+            android:icon="@drawable/developer"
+            android:title="Development Settings"
+            android:summary="open hidden development menu">
+            <intent
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.DevelopmentSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/network"
+            android:title="Device Network Info and Settings"
+            android:summary="Mobile Network and wifi Information and Settings">
+            <intent
+                android:targetPackage="com.android.settings"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.TestingSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/usb"
+            android:title="Phone USB Mode setting"
+            android:summary="Allows changing advanced Usb mode settings">
+            <intent
+                android:targetPackage="com.sec.usbsettings"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.sec.usbsettings.USBSettings" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/apn"
+            android:title="Phone APN Set up"
+            android:summary="Modify phone access points">
+            <intent
+                android:targetPackage="com.android.settings"
+                android:action="android.settings.APN_SETTINGS" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/battery"
+            android:title="Battery Status"
+            android:summary="All the battery information is here">
+            <intent
+                android:targetPackage="com.sec.android.app.factorykeystring"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.sec.android.app.status.BatteryStatus" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/gps"
+            android:title="GPS Satellite Viewer"
+            android:summary="Shows the satellites near your position, saved from agps data">
+            <intent
+                android:targetPackage="com.android.settings"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.location.SatelliteView" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/hardware"
+            android:title="Hardware test"
+            android:summary="Here you can test all detected hardware">
+            <intent
+                android:targetPackage="com.sec.android.app.hwmoduletest"
+                android:action="android.provider.Telephony.SECRET_CODE"
+                android:targetClass="com.sec.android.app.hwmoduletest.HwModuleTest" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/serial"
+            android:title="IMEI/MEID"
+            android:summary="ViewIMEI/MEID">
+            <intent
+                android:targetPackage="com.sec.android.app.servicemodeapp"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.sec.android.app.modemui.activities.ShowIMEI" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+</PreferenceScreen>

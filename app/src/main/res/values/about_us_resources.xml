@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
+<resources>
+
+
+    <!--Contact info arrays-->
+
+    <!--In this array you will put the icons for contact information,
+    for example xda icon for your xda thread, site icon for your site, facebook icon and so on-->
+    <array name="about_contact_us_drawables">
+        <item>@drawable/gplus</item>
+        <item>@drawable/xda</item>
+    </array>
+
+    <!--In this array you will put the titles for your contact info items. Keep the order consistent between all 3 arrays-->
+    <string-array name="about_contact_us_text">
+        <item>Google+</item>
+        <item>XDA</item>
+    </string-array>
+
+    <!--In this array you will put the titles for the URL strings that will open once a user clicked on the item-->
+    <string-array name="about_contact_us_links" translatable="false">
+        <item>https://plus.google.com/u/0/communities/113927660227421700954</item>
+        <item>http://forum.xda-developers.com/galaxy-note-3/development/rom-aryamod-v1-3-tw-lollipop-5-1-1-t3326976</item>
+    </string-array>
+
+
+
+    <!--Team info arrays-->
+    <array name="about_team_drawables">
+        <item>@drawable/kamy</item>
+        <item>@drawable/daxgirl</item>
+        <item>@drawable/td</item>
+    </array>
+    <string-array name="about_team_names">
+        <item>Kamy - The ROM Dev</item>
+        <item>Daxgirl - Talented gorgeous Dev</item>
+        <item>Troy - The Mod Master</item>
+    </string-array>
+    <string-array name="about_team_links" translatable="false">
+        <item>http://forum.xda-developers.com/member.php?u=4819130</item>
+        <item>http://forum.xda-developers.com/member.php?u=4714483</item>
+        <item>http://forum.xda-developers.com/member.php?u=1167171</item>
+    </string-array>
+
+
+
+    <!--Credits and thanks info arrays-->
+    <array name="about_credits_drawables">
+        <item>@drawable/darklord</item>
+        <item>@drawable/lss1977</item>
+        <item>@drawable/wuby</item>
+        <item>@drawable/matte</item>
+        <item>@drawable/dkonect</item>
+        <item>@drawable/karkasss</item>
+    </array>
+    <string-array name="about_credits_names">
+        <item>Darkera13 - for bringing port rom to Note 3 community</item>
+        <item>Lss1977 - for kernel support</item>
+        <item>Wuby - a silent programmer and ROM Control co-developer</item>
+        <item>MattBooth - for OTA Updates source code</item>
+        <item>Dkonect - for supporting AryaMod project and providing friendly solutions for users</item>
+        <item>Karkasss - for bringing Note UX pack to AryaMod and his support</item>
+    </string-array>
+    <string-array name="about_credits_links" translatable="false">
+        <item>http://forum.xda-developers.com/member.php?u=4696762</item>
+        <item>http://forum.xda-developers.com/member.php?u=4490057</item>
+        <item>http://forum.xda-developers.com/member.php?u=5493353</item>
+        <item>http://forum.xda-developers.com/member.php?u=3443334</item>
+        <item>http://forum.xda-developers.com/member.php?u=6212071</item>
+        <item>http://forum.xda-developers.com/member.php?u=5150446</item>
+    </string-array>
+</resources>

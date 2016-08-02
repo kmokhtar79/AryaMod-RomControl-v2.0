@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Samsung Email Mods"/>
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Email Exchange Security"
+        android:key="email_security"
+        android:summaryOn="Disabled "
+        android:summaryOff="Enabled" />
+
+    <PreferenceCategory
+        android:title="Settings Mods"/>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:entries="@array/dashboard_num_columns_entries"
+        android:title="Number of Columns in Settings"
+        android:key="dashboard_columns"
+        android:entryValues="@array/dashboard_num_columns_values" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Hide QuickSettings Favorites"
+        android:key="hide_qs_favorites"
+        android:defaultValue="false"
+        android:summaryOn="Hidden"
+        android:summaryOff="Shown" />
+
+</PreferenceScreen>

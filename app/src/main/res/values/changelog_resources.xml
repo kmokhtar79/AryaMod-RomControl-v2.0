@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Do not forget to include this in any locale specific folders for translation-->
+
+    <!--In the following array put your changelog items
+    Take as many lines as you need.
+    Add as many items as you want or delete some if those are too many
+    This order is how they will appear in the dialog
+    Make any order you want from top to bottom-->
+    <string-array name="changelog_items">
+        <item>Included LssKernel for all Supporting Variants</item>
+        <item>Updated Superuser to latest stable version 2.76, System Mods</item>
+        <item>Updated busybox to latest stable version 1.24.2-Stericson</item>
+        <item>ROM Control V2, totally new mechanism</item>
+        <item>Applied July security patch fix</item>
+        <item>Fixed T9 Dialer</item>
+        <item>Fixed Spen Direct and Handwriting</item>
+        <item>Fixed S Planner edit crash</item>
+        <item>Fixed Movie Editor</item>
+        <item>Fixed Auto Call Record sometimes not recording</item>
+        <item>Toggle custom/stock color for Statusbar Icon/Text</item>
+        <item>Toggle a global color for all statusbar Icons</item>
+        <item>Set any color for Signal Icon</item>
+        <item>Set any color for Data Icon</item>
+        <item>Set any color for WiFi Icon</item>
+        <item>Set any color for Notifications Icon</item>
+        <item>Set any color for Stock Battery Icon</item>
+        <item>Set any color for Stock Battery Icon Charging</item>
+        <item>Set any color for Stock Battery Percentage Color</item>
+        <item>Show/Hide WiFi in/out arrows</item>
+        <item>Statusbar Double Tap, 20+ Assignments</item>
+        <item>Set any Color, Gradiant for Statusbar Background</item>
+        <item>UI Style, immigrate between stock or IOS style statusbar with round notifications</item>
+        <item>Show/Hide Brightness Slider in Notification Panel</item>
+        <item>Add Call/Record Button in InCallUI</item>
+        <item>Set any Image, Color, Gradiant for InCallUI Background</item>
+        <item>Combine And Forward Message, CallBack Number, MMS Mobile Data Off, Sender Information When Forwarding Message, Message Priority/Validity, MMS Send Delivery Reports, MMS Delivery Time, Add Subject Field, And Copy To SIM/Save To Draft/Reply All/Priority Level In Composing List Mods In Stock Messaging App</item>
+        <item>Added TMB and XSI CSC to Aroma</item>
+        <item>Added Viper Only in Aroma/Sound Mods, now choose between Stock/Viper/All in One</item>
+        <item>Fixed all CSC User Mods</item>
+        <item>Added Enale/Disable Swipe to Block Notification in Aroma</item>
+        <item>Defualt CSC is set to BTU, United Kingdom in Aroma</item>
+        <item>Removed all CSC related bloats</item>
+        <item>Updated Toolbox</item>
+        <item>Updated OTA Updates</item>
+        <item>Device info in notification panel</item>
+    </string-array>
+
+    <!--This will be the dialog title.
+    Put your own rom version and name.
+    Have fun-->
+    <string name="rom_version_for_changelog">AryaMod S7edge Port v6.1 </string>
+
+
+</resources>

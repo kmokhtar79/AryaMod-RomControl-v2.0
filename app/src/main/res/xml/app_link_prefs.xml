@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:summary="Control samsung's toolbox, turn it on or off, choose available apps and rearrange them"
+        app:componentName="com.aryamod.toolboxsettings/com.aryamod.toolboxsettings.ToolboxSettings"/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="mobi.xperiacle.upsm.manager/mobi.xperiacle.upsm.manager.MainActivity"
+        android:title="UPSM Manager"
+        android:summary="Manage apps on UPSM"/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="org.omnirom.omniswitch/org.omnirom.omniswitch.SettingsActivity"
+        android:title="OmniSwitch"
+        android:summary="advanced multitasking from omni rom"/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="org.fastergps/org.fastergps.ui.BaseActivity"
+        android:title="Faster GPS"
+        android:summary="fix gps based on location"/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="mobi.xperiacle.touchwiz.themer/mobi.xperiacle.touchwiz.themer.IconThemer"
+        android:title="Galaxy Icon Themer"
+        android:summary="With Galaxy Icon Themer, you have the ability to change your icon theme whenever you like using popular icon packs from the Play Store."/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="org.adaway/org.adaway.ui.BaseActivity"
+        android:title="AdAway"
+        android:summary="block ads and malware"/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="com.kamy.aryamod.updates/com.kamy.aryamod.updates.activities.MainActivity"
+        android:title="OTA Updates"
+        android:summary="Check AryaMod Addons and Update"/>
+
+
+</PreferenceScreen>

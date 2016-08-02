@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
+<resources>
+
+    <string-array name="test_list_entries">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Let\'s make twenty</item>
+    </string-array>
+    <string-array name="test_list_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="theme_items">
+        <item>Light theme</item>
+        <item>Dark theme</item>
+    </string-array>
+    <string-array name="backup_restore_items">
+        <item>Backup data</item>
+        <item>Restore data</item>
+    </string-array>
+
+    <string-array name="thumbnail_items">
+        <item>Icon 1</item>
+        <item>Icon 2</item>
+    </string-array>
+    <string-array name="thumbnail_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="custom_bg_type_entries">
+        <item>Image</item>
+        <item>Solid color</item>
+        <item>Gradient</item>
+    </string-array>
+    <string-array name="custom_bg_type_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="custom_bg_type_entries_sb">
+        <item>Solid color</item>
+        <item>Gradient</item>
+    </string-array>
+    <string-array name="custom_bg_type_values_sb" translatable="false">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="gradient_entries">
+        <item>Top to bottom</item>
+        <item>Bottom to top</item>
+        <item>Left to right</item>
+        <item>Right to left</item>
+
+    </string-array>
+    <string-array name="gradient_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
+    <string-array name="crop_entries">
+        <item>Center crop</item>
+        <item>Center inside</item>
+        <item>Fit XY</item>
+    </string-array>
+    <string-array name="crop_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="immersive_entries">
+        <item>Show Statusbar (Default)</item>
+        <item>Hide Statusbar(FullScreen)</item>
+    </string-array>
+    <string-array name="immersive_values">
+        <item>immersive.full</item>
+        <item>immersive.full=*</item>
+    </string-array>
+
+    <string-array name="battery_bar_entries">
+        <item>Hide</item>
+        <item>Show</item>
+    </string-array>
+    <string-array name="battery_bar_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>Regular</item>
+        <item>Center-mirrored</item>
+    </string-array>
+    <string-array name="battery_bar_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_thickness_entries">
+        <item>1 dp</item>
+        <item>2 dp</item>
+        <item>3 dp</item>
+        <item>4 dp</item>
+    </string-array>
+    <string-array name="battery_bar_thickness_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="SignalPositionName">
+        <item>Shown on the Right</item>
+        <item>Shown on the Left</item>
+    </string-array>
+    <string-array name="SignalPositionValue">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="statusbar_double_tap_actions">
+        <item>Screen OFF</item>
+        <item>Power Menu</item>
+        <item>Back</item>
+        <item>Home</item>
+        <item>Recent Apps</item>
+        <item>Menu</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Google Search</item>
+        <item>Sound Mode: Sound/ Viber/ Silent</item>
+        <item>Kill</item>
+        <item>Torch</item>
+        <item>Screenshot</item>
+        <item>Toggle Wi-Fi</item>
+        <item>Toggle Mobile Data</item>
+        <item>Toggle Bluetooth</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="statusbar_double_tap_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>999</item>
+    </string-array>
+
+    <string-array name="torchlight_timeout_entries">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>10 minutes</item>
+    </string-array>
+    <string-array name="torchlight_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>600000</item>
+    </string-array>
+
+    <string-array name="pref_volume_cursor_titles">
+        <item>Disable</item>
+        <item>Enable</item>
+        <item>Reverse</item>
+    </string-array>
+    <string-array name="pref_volume_cursor_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="tw_effect_entries">
+        <item>None</item>
+        <item>Cascade</item>
+        <item>Outer cube</item>
+        <item>Inner Cube</item>
+        <item>Carousal</item>
+        <item>Plain</item>
+        <item>Conveyor</item>
+        <item>Card</item>
+    </string-array>
+    <string-array name="tw_effect_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="launcher_gesture_doubletap_entries">
+        <item>Screen OFF</item>
+        <item>Power Menu</item>
+        <item>Recent Apps</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Google Search</item>
+        <item>Sound Mode: Sound/ Viber/ Silent</item>
+        <item>Torch</item>
+        <item>Screenshot</item>
+        <item>Expand Notification Panel</item>
+        <item>Toggle Wi-Fi</item>
+        <item>Toggle Mobile Data</item>
+        <item>Toggle Bluetooth</item>
+        <item>Clean Memory</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="launcher_gesture_doubletap_values">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>23</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="launcher_gesture_swipeup_entries">
+        <item>Screen OFF</item>
+        <item>Power Menu</item>
+        <item>Recent Apps</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Google Search</item>
+        <item>Sound Mode: Sound/ Viber/ Silent</item>
+        <item>Torch</item>
+        <item>Screenshot</item>
+        <item>Expand Notification Panel</item>
+        <item>Toggle Wi-Fi</item>
+        <item>Toggle Mobile Data</item>
+        <item>Toggle Bluetooth</item>
+        <item>Clean Memory</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="launcher_gesture_swipeup_values">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>23</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="launcher_gesture_swipedown_entries">
+        <item>Screen OFF</item>
+        <item>Power Menu</item>
+        <item>Recent Apps</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Google Search</item>
+        <item>Sound Mode: Sound/ Viber/ Silent</item>
+        <item>Torch</item>
+        <item>Screenshot</item>
+        <item>Expand Notification Panel</item>
+        <item>Toggle Wi-Fi</item>
+        <item>Toggle Mobile Data</item>
+        <item>Toggle Bluetooth</item>
+        <item>Clean Memory</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="launcher_gesture_swipedown_values">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>23</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="lockscreen_font_style_entries">
+        <item>Waste of Time</item>
+        <item>Axe Monospaced</item>
+        <item>Homestead Display</item>
+        <item>Pincoyablck</item>
+        <item>GOBOLD</item>
+        <item>Agency FB</item>
+        <item>Long Shot</item>
+        <item>Carbon Block</item>
+        <item>Boomtown</item>
+        <item>Varietykiller</item>
+    </string-array>
+    <string-array name="lockscreen_font_style_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <array name="toggle_bg_drawables">
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_circle</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_circle_metal</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_darksyde</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square_metal</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_elegant_marble</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_green_glow</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_circle_glass</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_dished_mettal</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_framed_square</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square_glass</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_realms</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_magnifying_glass</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_square_darklight</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather_square</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather_rounded</item>
+        <item>@drawable/tw_quick_panel_quick_setting_button_round_bg_leather_round</item>
+    </array>
+    <string-array name="toggle_bg_entries">
+        <item>Stock</item>
+        <item>Circle</item>
+        <item>Metal Circle</item>
+        <item>Team Darksyde</item>
+        <item>Square</item>
+        <item>Metal Square</item>
+        <item>Elegant Marble</item>
+        <item>Green Glow</item>
+        <item>Glass Circle</item>
+        <item>Dished Metal</item>
+        <item>Framed Square</item>
+        <item>Glass Square</item>
+        <item>Realms</item>
+        <item>Magnifying Glass</item>
+        <item>Dark Light</item>
+        <item>Leather Square</item>
+        <item>Leather Rounded</item>
+        <item>Leather Round</item>
+    </string-array>
+    <string-array name="toggle_bg_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
+
+    <string-array name="toggle_entries">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="toggle_values">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="sysbar_recent">
+        <item>Disabled</item>
+        <item>Clear Button</item>
+        <item>Lock Button</item>
+        <item>Home Button</item>
+    </string-array>
+    <string-array name="sysbar_recent_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="dashboard_num_columns_entries">
+        <item>1 Columns</item>
+        <item>2 Columns</item>
+    </string-array>
+    <string-array name="dashboard_num_columns_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="call_delay_entries">
+        <item>No delay</item>
+        <item>1000ms</item>
+        <item>2500ms</item>
+        <item>5000ms (Stock)</item>
+    </string-array>
+    <string-array name="call_delay_values">
+        <item>0</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="volbtn_timeout_entries">
+        <item>100ms</item>
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>250ms</item>
+        <item>300ms</item>
+        <item>350ms</item>
+        <item>400ms</item>
+        <item>450ms</item>
+        <item>500ms</item>
+    </string-array>
+    <string-array name="volbtn_timeout_values">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="shape_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="shape_entries">
+        <item>Stock shape</item>
+        <item>Rounded corners</item>
+    </string-array>
+    <string-array name="carrier_entries">
+        <item>Actual carrier text</item>
+        <item>Custom text</item>
+    </string-array>
+    <string-array name="carrier_entry_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

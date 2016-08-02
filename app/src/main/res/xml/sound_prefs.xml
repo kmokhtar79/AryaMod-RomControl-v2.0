@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen
+        android:title="Volume Rocker Music Control"
+        android:summary="Customize volume rocker action" >
+        <PreferenceCategory
+            android:title="Music Control" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+            android:title="Music Control"
+            android:key="volbtn_music_controls"
+            android:defaultValue="false" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:entries="@array/volbtn_timeout_entries"
+            android:title="Button Delay"
+            android:key="volbtn_timeout"
+            android:summary="%s"
+            android:defaultValue="350"
+            android:dependency="volbtn_music_controls"
+            android:entryValues="@array/volbtn_timeout_values" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:title="System sound toggles"
+        android:summary="Enable or disable system sounds">
+        <PreferenceCategory
+            android:title="System Sounds" />
+        <PreferenceScreen
+            android:title="Boot Sounds"
+            android:summary="Enable or disable boot sound">
+            <PreferenceCategory
+                android:title="Boot Sounds" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:title="Disable Boot Sounds"
+                app:scriptFileName="disable_boot_sounds.sh"
+                android:summary="Disables the boot sounds" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:title="Enable Boot Sounds"
+                app:scriptFileName="enable_boot_sounds.sh"
+                android:summary="Enables the boot sounds" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="Volume Slider Sound"
+            android:summary="Enable or disable slider sound">
+            <PreferenceCategory
+                android:title="Volume Slider Sound" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:title="Disable Volume Slider"
+                app:scriptFileName="disable_volume_sounds.sh"
+                android:summary="Disables volume slider sounds"
+                app:isSilent="false"
+                app:packageNameToKill="com.android.systemui" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:title="Enable Volume Slider"
+                app:scriptFileName="enable_volume_sounds.sh"
+                android:summary="Enables volume slider sounds"
+                app:isSilent="false"
+                app:packageNameToKill="com.android.systemui" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="Charging Sounds"
+            android:summary="Enable or disable charging sound">
+            <PreferenceCategory
+                android:title="Charging Sounds" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:title="Disable Charging Sounds"
+                app:scriptFileName="disable_charging_sounds.sh"
+                android:summary="Disables all charging sounds" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:title="Enable Charging Sounds"
+                app:scriptFileName="enable_charging_sounds.sh"
+                android:summary="Enables all charging sounds" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="ScreenShot Sound"
+            android:summary="Enable or disable screenshot sound">
+            <PreferenceCategory
+                android:title="Screenshot Sound" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:title="Disable ScreenShot Sounds"
+                app:scriptFileName="disable_screenshot_sound.sh"
+                android:summary="Disables screenshot sound" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference
+                android:title="Enable ScreenShot Sounds"
+                app:scriptFileName="enable_screenshot_sound.sh"
+                android:summary="Enables screenshot sound" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Full Battery Notifications"
+        android:key="battery_full_notif"
+        android:defaultValue="1"
+        android:summaryOn="Full battery notification enabled"
+        android:summaryOff="Full battery notification disabled" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Low Battery Notifications"
+        android:key="battery_notif"
+        android:defaultValue="1"
+        android:summaryOn="Low battery warnings are enabled"
+        android:summaryOff="Low battery warnings are disabled" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Mobile Data Popup"
+        android:key="mobile_data_toggle"
+        android:defaultValue="1"
+        android:summaryOn="Confirmation Popup enabled"
+        android:summaryOff="Confirmation Popup disabled" />
+
+</PreferenceScreen>
